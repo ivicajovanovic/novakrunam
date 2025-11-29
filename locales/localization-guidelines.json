@@ -1,0 +1,112 @@
+{
+  "guidelines": {
+    "copy_rules": [
+      "Write base copy in clear, neutral English with short sentences to facilitate easier translation.",
+      "Avoid wordplay, idioms, and culture-specific references that may not translate well (e.g., 'piece of cake').",
+      "Keep headings and CTAs concise. Text expansion in languages like German or Serbian can break layouts if the English source is already long.",
+      "Group related copy into small, self-contained strings. Do not split sentences with variables in a way that assumes grammar structure (e.g., Avoid 'Welcome back, {name}' if the name might need to move in other languages)."
+    ],
+    "key_structure_rules": [
+      "Use nested keys to reflect the UI component structure (e.g., section.element.property).",
+      "Use snake_case for keys (e.g., 'hero_headline', 'contact_form').",
+      "Arrays should be handled as lists of objects with their own keys if the order matters or if they are dynamic."
+    ]
+  },
+  "example_structure": {
+    "hero": {
+      "badge": "Accepting new patients",
+      "headline": "Specialist care you can trust.",
+      "subheadline": "Nova Kruna-M is a private polyclinic in Belgrade, offering specialist examinations, diagnostics, and laboratory services in one place.",
+      "cta_primary": "Book an appointment",
+      "cta_secondary": "View services",
+      "benefits": [
+        "Experienced specialist doctors",
+        "Modern diagnostics and lab equipment",
+        "Clear explanations and follow-up care"
+      ],
+      "working_hours": {
+        "title": "Working Hours",
+        "subtitle": "Available all week",
+        "weekdays": "Mon - Fri",
+        "saturday": "Saturday"
+      }
+    },
+    "services": {
+      "title": "Comprehensive Medical Services",
+      "description": "From preventive check-ups to specialized treatments, our departments work together to provide holistic care.",
+      "items": {
+        "specialist": {
+          "title": "Specialist Examinations",
+          "description": "Internal medicine, cardiology, endocrinology and other specialist consultations focused on accurate diagnosis and clear treatment plans.",
+          "cta": "View details"
+        },
+        "diagnostics": {
+          "title": "Diagnostics & Imaging",
+          "description": "Ultrasound, ECG and other non-invasive diagnostics performed with modern equipment.",
+          "cta": "See diagnostics"
+        },
+        "laboratory": {
+          "title": "Laboratory Analysis",
+          "description": "Comprehensive laboratory tests for prevention, monitoring and follow-up.",
+          "cta": "See lab tests"
+        },
+        "preventive": {
+          "title": "Preventive Check-Ups",
+          "description": "Structured check-up packages tailored to age, lifestyle and risk factors.",
+          "cta": "Explore check-ups"
+        }
+      }
+    },
+    "contact": {
+      "title": "Ready to prioritize your health?",
+      "description": "Visit us at our central Belgrade location or contact us to schedule your appointment. We are open Monday through Saturday.",
+      "emergency_notice": "Not an emergency service: In case of a medical emergency, please contact your local emergency service immediately.",
+      "form": {
+        "title": "Request Appointment",
+        "subtitle": "Fill out the form below and we will contact you to confirm your appointment.",
+        "fields": {
+          "full_name": {
+            "label": "Full Name",
+            "placeholder": "e.g. Marko Marković"
+          },
+          "phone": {
+            "label": "Phone Number",
+            "placeholder": "+381 6X..."
+          },
+          "email": {
+            "label": "Email Address",
+            "placeholder": "email@example.com"
+          },
+          "preferred_date": "Preferred Date",
+          "preferred_time": "Preferred Time",
+          "service_interest": "Service Interest",
+          "message": "Message / Notes (Optional)",
+          "consent": "I agree to the processing of my personal data"
+        },
+        "submit_button": "Request Appointment"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Practical information to help you prepare for your visit.",
+      "questions": {
+        "referral": {
+          "q": "Do I need a referral to book an appointment?",
+          "a": "For most specialist examinations, a referral is not strictly necessary if you are paying privately. However, if you are using specific insurance plans, a referral from a general practitioner may be required."
+        },
+        "insurance": {
+          "q": "Do you work with insurance companies?",
+          "a": "Yes, Nova Kruna-M cooperates with several major insurance providers. The specific coverage depends on your policy type."
+        },
+        "parking": {
+          "q": "Is there parking near the clinic?",
+          "a": "Yes, we have a dedicated patient parking area directly in front of the clinic. Additionally, there is ample street parking available."
+        },
+        "preparation": {
+          "q": "How should I prepare for my appointment?",
+          "a": "Please bring any relevant previous medical records, ID, and your insurance card. for specific diagnostics (like ultrasound or blood tests), you may need to fast for 8-12 hours."
+        }
+      }
+    }
+  }
+}

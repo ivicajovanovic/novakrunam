@@ -1,0 +1,49 @@
+{
+  "section_config": {
+    "id": "blog-placeholder",
+    "title": "Health Tips & News",
+    "subtitle": "Latest updates and advice from our specialists",
+    "disclaimer_text": "The articles below provide general information and do not replace a professional medical consultation. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.",
+    "layout": {
+      "mobile": "single-column-stack",
+      "desktop": "grid-cols-3",
+      "pagination_enabled": true
+    }
+  },
+  "article_model": {
+    "fields": [
+      { "name": "id", "type": "string", "required": true },
+      { "name": "title", "type": "string", "required": true },
+      { "name": "short_summary", "type": "string", "required": true, "max_length": 160 },
+      { "name": "category", "type": "enum", "options": ["Preparation", "Health Tips", "Clinic News", "Prevention"] },
+      { "name": "estimated_read_time", "type": "string", "example": "3 min" },
+      { "name": "publish_date", "type": "date", "format": "YYYY-MM-DD" }
+    ]
+  },
+  "sample_data": [
+    {
+      "id": "art-001",
+      "title": "How to prepare for a specialist examination",
+      "short_summary": "General advice on what information, previous records, and identification documents to bring to your first appointment.",
+      "category": "Preparation",
+      "estimated_read_time": "3 min",
+      "publish_date": "2024-01-15"
+    },
+    {
+      "id": "art-002",
+      "title": "Understanding your blood test results",
+      "short_summary": "A simple guide to understanding common biomarkers in your laboratory analysis and what they mean for your health.",
+      "category": "Health Tips",
+      "estimated_read_time": "5 min",
+      "publish_date": "2024-02-01"
+    },
+    {
+      "id": "art-003",
+      "title": "The importance of regular cardiac screening",
+      "short_summary": "Why preventative ECG and ultrasound check-ups are crucial for early detection of cardiovascular issues.",
+      "category": "Prevention",
+      "estimated_read_time": "4 min",
+      "publish_date": "2024-02-20"
+    }
+  ]
+}

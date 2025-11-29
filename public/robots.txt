@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://novakruna-m.com/sitemap.xml
+Host: novakruna-m.com
