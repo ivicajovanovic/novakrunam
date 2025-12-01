@@ -31,6 +31,13 @@ const equipmentList: Equipment[] = [
     benefit: "Preporuke za terapiju, suplementaciju i promene životnih navika za jačanje kostiju.",
     icon: ShieldCheck,
   },
+  {
+    name: "Ginekološki pregledi i dijagnostika",
+    type: "Ginekologija",
+    usage: "Kompletni ginekološki pregledi, ultrazvučna dijagnostika, PAPA test i kolposkopija.",
+    benefit: "Prevencija i rano otkrivanje oboljenja reproduktivnih organa, praćenje trudnoće i savetovalište.",
+    icon: Microscope,
+  },
 ]
 
 export function DiagnosticsSection() {

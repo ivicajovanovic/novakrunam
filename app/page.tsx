@@ -13,10 +13,12 @@ import { SiteFooter } from "@/components/site-footer" // Import SiteFooter
 import { StickyMobilePhone } from "@/components/sticky-mobile-phone" // Import sticky mobile phone bar
 import { Activity, Shield, Calendar } from "lucide-react" // removed unused Star icon
 import { VideoSection } from "@/components/video-section" // Import the VideoSection
+import { Preloader } from "@/components/preloader" // Import Preloader component
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <Preloader />
       <SiteHeader />
 
       <main className="flex-1">

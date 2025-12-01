@@ -49,9 +49,11 @@ export function SiteHeader() {
       <div className="container mx-auto max-w-[1200px] px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group" onClick={() => setIsMobileMenuOpen(false)}>
-          <div className="h-9 w-9 bg-teal-700 rounded-lg flex items-center justify-center shadow-sm group-hover:bg-teal-800 transition-colors">
-            <Activity className="h-5 w-5 text-white" />
-          </div>
+          <img
+            src="/logo new.svg"
+            alt="Logo"
+            className="h-9 w-9 object-contain"
+          />
           <span className="font-bold text-xl tracking-tight text-slate-900">
             Nova <span className="text-teal-700">Kruna-M</span>
           </span>

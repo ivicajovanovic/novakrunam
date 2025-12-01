@@ -144,7 +144,7 @@ export function DoctorsSection() {
             className="w-full max-w-4xl mx-auto"
             aria-label="Meet our specialists – carousel"
           >
-            <CarouselContent className="-ml-4 md:-ml-6">
+            <CarouselContent className="-ml-4 md:-ml-6 py-6">
               {doctors.map((doctor, index) => {
                 const isActive = index === current
                 return (

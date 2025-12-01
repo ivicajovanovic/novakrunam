@@ -41,6 +41,12 @@ const testimonials: Testimonial[] = [
     quote: "Svi zaposleni su bili profesionalni i izuzetno ljubazni. Dopada mi se što su me saslušali i što sam im stvarno bila važna. Hvala vam od srca.",
     service: "Kardiološka kontrola",
   },
+  {
+    id: 6,
+    initials: "S.",
+    quote: "Doktor Jovanović je bio izuzetno pažljiv i stručan. Detaljno mi je objasnio sve nalaze i odgovorio na sva moja pitanja. Osećala sam se potpuno opušteno i sigurno tokom celog pregleda.",
+    service: "Ginekološki pregled",
+  },
 ]
 
 export function TestimonialsSection() {
