@@ -4,10 +4,11 @@ import * as React from "react"
 import Link from "next/link"
 import { Activity, Menu, X, Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useMobileMenu } from "@/contexts/mobile-menu-context"
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = React.useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
+  const { isMobileMenuOpen, setIsMobileMenuOpen } = useMobileMenu()
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +51,7 @@ export function SiteHeader() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group" onClick={() => setIsMobileMenuOpen(false)}>
           <img
-            src="/logo new.svg"
+            src="/logo.svg"
             alt="Logo"
             className="h-9 w-9 object-contain"
           />

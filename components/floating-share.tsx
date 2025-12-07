@@ -41,7 +41,7 @@ export function FloatingShare() {
     }
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+        <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50 hidden md:flex flex-col items-start gap-2">
             <div
                 className={cn(
                     "flex flex-col gap-2 transition-all duration-300 ease-in-out origin-bottom",
@@ -51,7 +51,7 @@ export function FloatingShare() {
                 <Button
                     variant="secondary"
                     size="icon"
-                    className="h-10 w-10 rounded-full shadow-lg bg-[#1877F2] hover:bg-[#1877F2]/90 text-white border-none"
+                    className="h-11 w-11 rounded-full shadow-lg bg-[#1877F2] hover:bg-[#1877F2]/90 text-white border-none"
                     onClick={() => handleShare("facebook")}
                     aria-label="Share on Facebook"
                 >
@@ -60,7 +60,7 @@ export function FloatingShare() {
                 <Button
                     variant="secondary"
                     size="icon"
-                    className="h-10 w-10 rounded-full shadow-lg bg-[#1DA1F2] hover:bg-[#1DA1F2]/90 text-white border-none"
+                    className="h-11 w-11 rounded-full shadow-lg bg-[#1DA1F2] hover:bg-[#1DA1F2]/90 text-white border-none"
                     onClick={() => handleShare("twitter")}
                     aria-label="Share on Twitter"
                 >
@@ -69,7 +69,7 @@ export function FloatingShare() {
                 <Button
                     variant="secondary"
                     size="icon"
-                    className="h-10 w-10 rounded-full shadow-lg bg-[#25D366] hover:bg-[#25D366]/90 text-white border-none"
+                    className="h-11 w-11 rounded-full shadow-lg bg-[#25D366] hover:bg-[#25D366]/90 text-white border-none"
                     onClick={() => handleShare("whatsapp")}
                     aria-label="Share on WhatsApp"
                 >
@@ -78,7 +78,7 @@ export function FloatingShare() {
                 <Button
                     variant="secondary"
                     size="icon"
-                    className="h-10 w-10 rounded-full shadow-lg bg-slate-700 hover:bg-slate-800 text-white border-none"
+                    className="h-11 w-11 rounded-full shadow-lg bg-slate-700 hover:bg-slate-800 text-white border-none"
                     onClick={() => handleShare("copy")}
                     aria-label="Copy Link"
                 >

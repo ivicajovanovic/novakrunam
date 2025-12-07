@@ -4,6 +4,8 @@ import { Geist, Geist_Mono } from "next/font/google"
 
 import { SchemaOrg } from "@/components/schema-org"
 import { FloatingShare } from "@/components/floating-share"
+import { FaqChatbot } from "@/components/faq-chatbot"
+import { MobileMenuProvider } from "@/contexts/mobile-menu-context"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -96,19 +98,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
+        url: "/logo.svg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
   },
 }
 
@@ -123,9 +116,12 @@ export default function RootLayout({
         <SchemaOrg />
       </head>
       <body className={`font-sans antialiased text-slate-900 bg-white selection:bg-teal-100 selection:text-teal-900`}>
-        {children}
+        <MobileMenuProvider>
+          {children}
 
-        <FloatingShare />
+          <FloatingShare />
+          <FaqChatbot />
+        </MobileMenuProvider>
       </body>
     </html>
   )

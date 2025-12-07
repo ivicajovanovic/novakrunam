@@ -32,7 +32,7 @@ export function HeroSection() {
           <div className="space-y-2 border-t border-slate-100 pt-3">
             <div className="flex justify-between text-sm">
               <span className="text-slate-500">Pon - Pet</span>
-              <span className="font-medium text-slate-900">08:00 - 16:00</span>
+              <span className="font-medium text-slate-900">08:00 - 15:00</span>
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-slate-500">Telefon</span>
@@ -84,7 +84,7 @@ export function HeroSection() {
                 href="https://www.facebook.com/novakruna.m/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-all hover:bg-teal-50 hover:text-teal-700"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-all hover:bg-teal-50 hover:text-teal-700"
                 aria-label="Facebook"
               >
                 <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@ export function HeroSection() {
                 href="https://www.instagram.com/novakruna.m"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-all hover:bg-teal-50 hover:text-teal-700"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-all hover:bg-teal-50 hover:text-teal-700"
                 aria-label="Instagram"
               >
                 <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">

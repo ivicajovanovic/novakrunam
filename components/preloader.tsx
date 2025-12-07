@@ -43,7 +43,7 @@ export function Preloader() {
                     setTimeout(() => setIsLoading(false), 2000)
                 }}
             >
-                <source src="/preloader video.mp4" type="video/mp4" />
+                <source src="/preloader-video.mp4" type="video/mp4" />
             </video>
         </div>
     )

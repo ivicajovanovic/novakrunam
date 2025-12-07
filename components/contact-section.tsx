@@ -11,7 +11,7 @@ export function ContactSection() {
               Kontakt i termin
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Posetite nas ili nas kontaktirajte kako biste zakazali termin. Radimo radnim danima od 08:00 do 16:00.
+              Posetite nas ili nas kontaktirajte kako biste zakazali termin. Radimo radnim danima od 08:00 do 15:00.
             </p>
 
             <div className="space-y-8 mb-8">
@@ -33,7 +33,7 @@ export function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-slate-900 text-lg">Telefon</h4>
                   <p className="text-slate-600 text-lg font-medium">012 327564 / 066 327564</p>
-                  <p className="text-slate-500 text-sm">Pon-Pet: 08:00 - 16:00</p>
+                  <p className="text-slate-500 text-sm">Pon-Pet: 08:00 - 15:00</p>
                 </div>
               </div>
 
@@ -54,18 +54,24 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 text-lg">Radno vreme</h4>
-                  <p className="text-slate-600">Pon–Pet: 08:00–16:00</p>
+                  <p className="text-slate-600">Pon–Pet: 08:00–15:00</p>
                 </div>
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="w-full h-64 bg-slate-100 rounded-xl overflow-hidden border border-slate-200 relative group">
-              <div className="absolute inset-0 flex items-center justify-center bg-slate-100 text-slate-400 font-medium">
-                Map Embed Placeholder
-              </div>
-              {/* This would be an iframe in production */}
-              <div className="absolute inset-0 bg-teal-900/0 group-hover:bg-teal-900/5 transition-colors duration-300" />
+            {/* Google Maps Embed */}
+            <div className="w-full h-64 bg-slate-100 rounded-xl overflow-hidden border border-slate-200 relative">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.4478251514823!2d21.4136953!3d44.3812652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4751250079451045%3A0xc4b4eb829edf3641!2sPoliklinika%20Nova%20Kruna%20M!5e0!3m2!1sen!2srs!4v1733058762000!5m2!1sen!2srs"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Lokacija Poliklinike Nova Kruna M na Google Maps"
+                className="absolute inset-0"
+              />
             </div>
           </div>
 
@@ -169,7 +175,7 @@ export function ContactSection() {
                     <option value="">Bilo koje vreme</option>
                     <option value="morning">Jutro (08:00 - 12:00)</option>
                     <option value="afternoon">Podne (12:00 - 14:00)</option>
-                    <option value="evening">Posle podne (14:00 - 16:00)</option>
+                    <option value="evening">Posle podne (14:00 - 15:00)</option>
                   </select>
                 </div>
               </div>

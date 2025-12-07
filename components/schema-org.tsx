@@ -30,7 +30,7 @@ export function SchemaOrg() {
                                 "@type": "OpeningHoursSpecification",
                                 dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                                 opens: "08:00",
-                                closes: "16:00",
+                                closes: "15:00",
                             },
                         ],
                         sameAs: [
@@ -173,7 +173,7 @@ export function SchemaOrg() {
                                 name: "Koje je vaše radno vreme?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Radimo radnim danima od 08:00 do 16:00 časova. Za hitne slučajeve i posebne dogovore, molimo vas da nas kontaktirate telefonom.",
+                                    text: "Radimo radnim danima od 08:00 do 15:00 časova. Za hitne slučajeve i posebne dogovore, molimo vas da nas kontaktirate telefonom.",
                                 },
                             },
                             {
