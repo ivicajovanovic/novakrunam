@@ -32,6 +32,7 @@ const doctors: Doctor[] = [
     bio: "Ultrazvučna dijagnostika krvnih sudova, procena venskog i arterijskog sistema, konsultacije o prevenciji vaskularnih bolesti.",
     experience: "VMA konsultant",
     focusAreas: ["Dopler krvnih sudova", "Procena vaskularnog sistema"],
+    imageUrl: "/incognito.jpg",
   },
   {
     id: "2",
@@ -40,6 +41,7 @@ const doctors: Doctor[] = [
     bio: "Dijagnostika, savetovanje, konzervativna terapija i rehabilitacija kod ortopedskih stanja i povreda.",
     experience: "Ortoped VMA",
     focusAreas: ["Ortopedija", "Rehabilitacija"],
+    imageUrl: "/incognito.jpg",
   },
   {
     id: "3",
@@ -48,6 +50,7 @@ const doctors: Doctor[] = [
     bio: "Pregled i klinička procena, dijagnostika i interpretacija nalaza, propisivanje i praćenje terapije.",
     experience: "Neurolog",
     focusAreas: ["Neurologija", "Dijagnostika"],
+    imageUrl: "/incognito.jpg",
   },
   {
     id: "4",
@@ -56,6 +59,7 @@ const doctors: Doctor[] = [
     bio: "Ginekološki pregledi, ultrazvuk abdomena, lečenje i praćenje bolesti, saveti i testiranja.",
     experience: "Ginekolog VMA",
     focusAreas: ["Ginekologija", "Ultrazvuk"],
+    imageUrl: "/incognito.jpg",
   },
   {
     id: "5",
@@ -64,14 +68,16 @@ const doctors: Doctor[] = [
     bio: "Specijalistički urološki pregledi, ultrazvuk urotrakta, dijagnostika i planiranje terapije.",
     experience: "Urolog KBC",
     focusAreas: ["Urologija", "Ultrazvuk urotrakta"],
+    imageUrl: "/incognito.jpg",
   },
   {
     id: "6",
-    name: "Dr Snežana Nena Miletić",
-    title: "Specijalista estetske hirurgije",
-    bio: "Procena estetskih potreba, prikaz mogućih rešenja, individualno planiranje tretmana.",
-    experience: "Estetska hirurgija",
-    focusAreas: ["Estetika", "Konsultacije"],
+    name: "Dr Snežana Abu Warda",
+    title: "Specijalista pedijatrije",
+    bio: "Dijagnostika i lečenje dečijih bolesti, praćenje rasta i razvoja, vakcinacija i preventivni pregledi.",
+    experience: "Pedijatar",
+    focusAreas: ["Pedijatrija", "Dečije bolesti"],
+    imageUrl: "/incognito.jpg",
   },
   {
     id: "7",
@@ -80,6 +86,7 @@ const doctors: Doctor[] = [
     bio: "Opšti pregledi, propisivanje terapije, preventivna medicina i zdravstvena edukacija.",
     experience: "Opšta medicina",
     focusAreas: ["Opšta praksa", "Preventiva"],
+    imageUrl: "/incognito.jpg",
   },
   {
     id: "8",
@@ -88,6 +95,7 @@ const doctors: Doctor[] = [
     bio: "Dijagnostika i terapija za decu, praćenje razvoja, prevencija i savetovanje roditelja.",
     experience: "Pedijatar",
     focusAreas: ["Pedijatrija", "Dečiji razvoj"],
+    imageUrl: "/incognito.jpg",
   },
   {
     id: "9",
@@ -96,6 +104,7 @@ const doctors: Doctor[] = [
     bio: "Kardiološki pregledi, terapija, prevencija srčanih bolesti i edukacija pacijenata.",
     experience: "Kardiolog",
     focusAreas: ["Ultrazvuk srca", "Prevencija"],
+    imageUrl: "/incognito.jpg",
   },
 ]
 
