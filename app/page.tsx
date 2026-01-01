@@ -17,7 +17,7 @@ import { Preloader } from "@/components/preloader" // Import Preloader component
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-white overflow-x-hidden max-w-full">
       <Preloader />
       <SiteHeader />
 

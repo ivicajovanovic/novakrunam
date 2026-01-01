@@ -98,7 +98,7 @@ export function FaqChatbot() {
         return (
             <Button
                 onClick={() => setIsOpen(true)}
-                className="fixed bottom-16 left-1/2 -translate-x-1/2 md:bottom-5 md:left-auto md:right-5 md:translate-x-0 z-50 rounded-full shadow-lg h-12 px-4 bg-blue-600 hover:bg-blue-700 text-white gap-2"
+                className="fixed bottom-16 left-4 right-4 md:bottom-5 md:left-auto md:right-5 md:w-auto z-50 rounded-full shadow-lg h-12 px-4 bg-blue-600 hover:bg-blue-700 text-white gap-2 max-w-[calc(100vw-2rem)] mx-auto md:mx-0"
             >
                 <MessageCircle className="h-5 w-5" />
                 <span>Chat – pitanja o poliklinici</span>
@@ -107,7 +107,7 @@ export function FaqChatbot() {
     }
 
     return (
-        <div className="fixed bottom-16 left-1/2 -translate-x-1/2 md:bottom-5 md:left-auto md:right-5 md:translate-x-0 z-50 w-[320px] max-w-[90vw] flex flex-col bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden animate-in slide-in-from-bottom-5 fade-in duration-300">
+        <div className="fixed bottom-16 left-4 right-4 md:bottom-5 md:left-auto md:right-5 md:w-[320px] z-50 flex flex-col bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden animate-in slide-in-from-bottom-5 fade-in duration-300 max-w-full">
             {/* Header */}
             <div className="bg-blue-600 text-white p-3 flex justify-between items-center">
                 <div className="font-semibold text-sm">Chat – Nova Kruna M</div>
