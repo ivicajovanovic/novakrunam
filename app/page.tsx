@@ -21,7 +21,7 @@ export default function Home() {
       <Preloader />
       <SiteHeader />
 
-      <main className="flex-1">
+      <main className="flex-1 md:pt-20">
         {/* Hero Section */}
         <HeroSection />
 
