@@ -32,7 +32,7 @@ const doctors: Doctor[] = [
     bio: "Ultrazvučna dijagnostika krvnih sudova, procena venskog i arterijskog sistema, konsultacije o prevenciji vaskularnih bolesti.",
     experience: "VMA konsultant",
     focusAreas: ["Dopler krvnih sudova", "Procena vaskularnog sistema"],
-    imageUrl: "/incognito.jpg",
+    imageUrl: "/aleksandar_zaric.jpg",
   },
   {
     id: "2",
@@ -41,7 +41,7 @@ const doctors: Doctor[] = [
     bio: "Dijagnostika, savetovanje, konzervativna terapija i rehabilitacija kod ortopedskih stanja i povreda.",
     experience: "Ortoped VMA",
     focusAreas: ["Ortopedija", "Rehabilitacija"],
-    imageUrl: "/incognito.jpg",
+    imageUrl: "/milan_lukovic.jpg",
   },
   {
     id: "3",
@@ -50,7 +50,7 @@ const doctors: Doctor[] = [
     bio: "Pregled i klinička procena, dijagnostika i interpretacija nalaza, propisivanje i praćenje terapije.",
     experience: "Neurolog",
     focusAreas: ["Neurologija", "Dijagnostika"],
-    imageUrl: "/incognito.jpg",
+    imageUrl: "/jasmina_malovic.jpg",
   },
   {
     id: "4",
@@ -59,7 +59,7 @@ const doctors: Doctor[] = [
     bio: "Ginekološki pregledi, ultrazvuk abdomena, lečenje i praćenje bolesti, saveti i testiranja.",
     experience: "Ginekolog VMA",
     focusAreas: ["Ginekologija", "Ultrazvuk"],
-    imageUrl: "/incognito.jpg",
+    imageUrl: "/nebojsa_jovanovic.jpg",
   },
   {
     id: "5",
@@ -72,12 +72,12 @@ const doctors: Doctor[] = [
   },
   {
     id: "6",
-    name: "Dr Snežana Abu Warda",
-    title: "Specijalista pedijatrije",
-    bio: "Dijagnostika i lečenje dečijih bolesti, praćenje rasta i razvoja, vakcinacija i preventivni pregledi.",
-    experience: "Pedijatar",
-    focusAreas: ["Pedijatrija", "Dečije bolesti"],
-    imageUrl: "/incognito.jpg",
+    name: "Dr Marina Đaković",
+    title: "Specijalista interne medicine",
+    bio: "Dijagnostika i lečenje bolesti unutrašnjih organa, preventivni pregledi, praćenje hroničnih stanja i savetovanje o zdravom načinu života.",
+    experience: "Internista",
+    focusAreas: ["Interna medicina", "Preventiva"],
+    imageUrl: "/marina_djakovic.jpg",
   },
   {
     id: "7",
@@ -86,7 +86,7 @@ const doctors: Doctor[] = [
     bio: "Opšti pregledi, propisivanje terapije, preventivna medicina i zdravstvena edukacija.",
     experience: "Opšta medicina",
     focusAreas: ["Opšta praksa", "Preventiva"],
-    imageUrl: "/incognito.jpg",
+    imageUrl: "/mira_rankovic.jpg",
   },
   {
     id: "8",
