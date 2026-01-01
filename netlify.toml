@@ -3,7 +3,15 @@
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
+
+# Next.js plugin configuration
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+  [plugins.inputs]
+  # Skip form detection to avoid build issues
+  skipForms = true
 
 # Redirect all requests to index.html for Next.js SPA routing
 # Redirects are handled by Next.js
