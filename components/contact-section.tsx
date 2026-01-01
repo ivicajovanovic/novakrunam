@@ -95,11 +95,8 @@ export function ContactSection() {
               className="space-y-4"
               name="contactForm"
               method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
+              action="https://formsubmit.co/info@novakrunam.rs"
             >
-              <input type="hidden" name="form-name" value="contactForm" />
-              <input type="hidden" name="bot-field" />
               <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-medium text-slate-700">
                   Ime i prezime{" "}
