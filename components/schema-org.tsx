@@ -93,6 +93,12 @@ export function SchemaOrg() {
                                 name: "Interna medicina",
                                 description: "Sveobuhvatni pregledi unutrašnjih organa, ultrazvučna dijagnostika abdomena",
                             },
+                            {
+                                "@type": "MedicalSpecialty",
+                                name: "Otorinolaringologija",
+                                description:
+                                    "Specijalistički ORL pregledi uha, grla i nosa za decu i odrasle, ispiranje ušiju, brisevi i procena promuklosti",
+                            },
                         ],
                         availableService: [
                             {

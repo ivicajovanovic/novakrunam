@@ -4,6 +4,7 @@ import { ServicesSection } from "@/components/services-section"
 import { DepartmentsSection } from "@/components/departments-section" // importing the new component
 import { DoctorsSection } from "@/components/doctors-section"
 import { DiagnosticsSection } from "@/components/diagnostics-section" // Importing new component
+import { OrlCheckupSection } from "@/components/orl-checkup-section"
 import { PatientJourneySection } from "@/components/patient-journey-section"
 import { ClinicGallerySection } from "@/components/clinic-gallery-section"
 import { TestimonialsSection } from "@/components/testimonials-section" // importing new component
@@ -79,6 +80,8 @@ export default function Home() {
 
         {/* Diagnostics & Equipment */}
         <DiagnosticsSection />
+
+        <OrlCheckupSection />
 
         {/* Patient Journey */}
         <PatientJourneySection />

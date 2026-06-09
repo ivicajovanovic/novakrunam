@@ -305,7 +305,7 @@ export const NK_KNOWLEDGE: KnowledgeItem[] = [
         questions: ["Kakve preglede nudite?", "Koje usluge imate?", "Koje sve specijaliste imate?", "Da li radite savetovanja?"],
         keywords: ["pregledi", "savetovanja", "usluge", "specijalisti", "lista lekara", "kakve usluge", "koje specijaliste imate", "koje preglede radite", "sta nudite"],
         answer:
-            "U poliklinici se obavljaju specijalistički pregledi iz više oblasti (opšta medicina, interna medicina, kardiologija, ginekologija, urologija, ortopedija, neurologija, neuropsihijatrija, pedijatrija i druge), kao i dijagnostički pregledi i savetovanja. Za tačan spisak specijalista i usluga najbolje je da nas kontaktirate telefonom.",
+            "U poliklinici se obavljaju specijalistički pregledi iz više oblasti (opšta medicina, interna medicina, kardiologija, ginekologija, urologija, ortopedija, neurologija, neuropsihijatrija, pedijatrija, otorinolaringologija i druge), kao i dijagnostički pregledi i savetovanja. Za tačan spisak specijalista i usluga najbolje je da nas kontaktirate telefonom.",
         category: "opste",
     },
 
@@ -364,19 +364,20 @@ export const NK_KNOWLEDGE: KnowledgeItem[] = [
         category: "usluge_koje_ne_nudimo",
     },
 
-    // ORL - NIJE DOSTUPAN
+    // ORL
     {
-        id: "nema_orl",
+        id: "orl",
         questions: [
             "Da li imate ORL lekara?",
             "Otorinolaringolog",
             "Pregled grla i nosa",
             "Da li imate lekara za uvo grlo nos?",
+            "Ko je ORL lekar?",
         ],
-        keywords: ["orl", "otorinolaringolog", "uvo", "grlo", "nos", "sinusi", "otorinolaringologija"],
+        keywords: ["orl", "otorinolaringolog", "uvo", "grlo", "nos", "sinusi", "otorinolaringologija", "promuklost", "bris grla", "bris nosa", "ispiranje usiju"],
         answer:
-            "Poliklinika Nova Kruna M trenutno ne nudi usluge otorinolaringologije (ORL). Za preglede uva, grla i nosa potrebno je da se obratite specijalizovanoj ustanovi ili ORL ordinaciji.",
-        category: "usluge_koje_ne_nudimo",
+            "Da. ORL preglede u Poliklinici Nova Kruna M obavlja Dr Željka Iskić, specijalista otorinolaringologije. Pregledi su namenjeni deci i odraslima, a obuhvataju tegobe uha, grla i nosa, infekcije, alergijski rinitis, ispiranje ušiju, uzimanje briseva i procenu promuklosti. Za zakazivanje i tačne termine najbolje je da nas pozovete telefonom.",
+        category: "usluge",
     },
 
     // OFTALMOLOGIJA - NIJE DOSTUPNA

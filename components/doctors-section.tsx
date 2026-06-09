@@ -106,6 +106,15 @@ const doctors: Doctor[] = [
     focusAreas: ["Ultrazvuk srca", "Prevencija"],
     imageUrl: "/incognito.jpg",
   },
+  {
+    id: "10",
+    name: "Dr Željka Iskić",
+    title: "Specijalista otorinolaringologije",
+    bio: "Specijalistički ORL pregledi za decu i odrasle, dijagnostika i lečenje tegoba uha, grla i nosa, ispiranje ušiju, uzimanje briseva i procena promuklosti.",
+    experience: "ORL specijalista",
+    focusAreas: ["ORL pregledi", "Uho, grlo i nos"],
+    imageUrl: "/zeljka.jpg",
+  },
 ]
 
 export function DoctorsSection() {
