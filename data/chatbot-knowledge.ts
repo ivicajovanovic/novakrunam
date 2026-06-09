@@ -31,6 +31,20 @@ export const NK_KNOWLEDGE: KnowledgeItem[] = [
     },
 
     {
+        id: "apoteka",
+        questions: [
+            "Da li u blizini Poliklinike postoji apoteka?",
+            "Ima li apoteka u blizini?",
+            "Da li imate apoteku?",
+            "Gde je najbliža apoteka?",
+        ],
+        keywords: ["apoteka", "lekarna", "lekovi", "preparati", "seki tilia", "šeki tilia"],
+        answer:
+            "Da. Apoteka Šeki-Tilia nalazi se u samom objektu Poliklinike, odmah na ulazu. Potpuno je opremljena i organizovana tako da pacijentima Poliklinike omogući brz i praktičan pristup lekovima, preparatima i drugim apotekarskim proizvodima koji im mogu biti potrebni nakon pregleda.",
+        category: "opste",
+    },
+
+    {
         id: "kontakt",
         questions: ["Koji su kontakt telefoni?", "Kako da vas pozovem?", "Imate li broj telefona?", "Telefon poliklinike"],
         keywords: ["telefon", "kontakt", "broj", "broj telefona", "poziv", "zakazivanje telefonom"],

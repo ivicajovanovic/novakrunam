@@ -18,6 +18,11 @@ export function FAQSection() {
         "Nalazimo se na adresi Petra Dobrnjca 54 u Petrovcu na Mlavi. Parking je dostupan ispred zgrade. Lako nas možete pronaći koristeći Google Maps navigaciju.",
     },
     {
+      question: "Da li u blizini Poliklinike postoji apoteka?",
+      answer:
+        "Da. Apoteka Šeki-Tilia nalazi se u samom objektu Poliklinike, odmah na ulazu. Potpuno je opremljena i organizovana tako da pacijentima Poliklinike omogući brz i praktičan pristup lekovima, preparatima i drugim apotekarskim proizvodima koji im mogu biti potrebni nakon pregleda.",
+    },
+    {
       question: "Koje je vaše radno vreme?",
       answer:
         "Radimo radnim danima od 08:00 do 16:00 časova. Za hitne slučajeve i posebne dogovore, molimo vas da nas kontaktirate telefonom.",

@@ -11,7 +11,7 @@ import { FAQSection } from "@/components/faq-section" // Import the FAQ section
 import { ContactSection } from "@/components/contact-section" // Importing the new ContactSection component
 import { SiteFooter } from "@/components/site-footer" // Import SiteFooter
 import { StickyMobilePhone } from "@/components/sticky-mobile-phone" // Import sticky mobile phone bar
-import { Activity, Shield, Calendar } from "lucide-react" // removed unused Star icon
+import { Activity, Shield, Calendar, Pill } from "lucide-react" // removed unused Star icon
 import { VideoSection } from "@/components/video-section" // Import the VideoSection
 import { Preloader } from "@/components/preloader" // Import Preloader component
 
@@ -28,7 +28,7 @@ export default function Home() {
         {/* Core Values / Features */}
         <section className="py-16 md:py-24 bg-white border-b border-slate-100">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
-            <div className="grid md:grid-cols-3 gap-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
               <div className="space-y-4">
                 <div className="h-12 w-12 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700">
                   <Shield className="h-6 w-6" />
@@ -54,6 +54,15 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-slate-900">Efikasno zakazivanje</h3>
                 <p className="text-slate-600 leading-relaxed">
                   Poštujemo vaše vreme. Lako zakažite termine uz minimalno čekanje u našim mirnim prostorijama.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <div className="h-12 w-12 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-700">
+                  <Pill className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900">Apoteka Šeki-Tilia</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  U objektu Poliklinike počela je sa radom potpuno opremljena apoteka za sve Vaše potrebe.
                 </p>
               </div>
             </div>

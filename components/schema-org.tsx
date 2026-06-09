@@ -170,6 +170,14 @@ export function SchemaOrg() {
                             },
                             {
                                 "@type": "Question",
+                                name: "Da li u blizini Poliklinike postoji apoteka?",
+                                acceptedAnswer: {
+                                    "@type": "Answer",
+                                    text: "Da. Apoteka Šeki-Tilia nalazi se u samom objektu Poliklinike, odmah na ulazu. Potpuno je opremljena i organizovana tako da pacijentima Poliklinike omogući brz i praktičan pristup lekovima, preparatima i drugim apotekarskim proizvodima koji im mogu biti potrebni nakon pregleda.",
+                                },
+                            },
+                            {
+                                "@type": "Question",
                                 name: "Koje je vaše radno vreme?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
