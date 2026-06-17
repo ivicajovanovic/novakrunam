@@ -6,6 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
+    "seo:check": "node scripts/seo-check.mjs",
     "start": "next start"
   },
   "dependencies": {

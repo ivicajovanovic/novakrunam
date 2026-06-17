@@ -25,7 +25,7 @@ export function FAQSection() {
     {
       question: "Koje je vaše radno vreme?",
       answer:
-        "Radimo radnim danima od 08:00 do 16:00 časova. Za hitne slučajeve i posebne dogovore, molimo vas da nas kontaktirate telefonom.",
+        "Radimo radnim danima od 08:00 do 15:00 časova. Za hitne slučajeve i posebne dogovore, molimo vas da nas kontaktirate telefonom.",
     },
     {
       question: "Da li imate online prisustvo?",

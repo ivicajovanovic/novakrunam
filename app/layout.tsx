@@ -6,12 +6,14 @@ import { SchemaOrg } from "@/components/schema-org"
 import { FloatingShare } from "@/components/floating-share"
 import { FaqChatbot } from "@/components/faq-chatbot"
 import { MobileMenuProvider } from "@/contexts/mobile-menu-context"
+import { clinic, siteUrl } from "@/lib/clinic-data"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Poliklinika Nova Kruna M – Petrovac na Mlavi",
   description:
     "Poliklinika Nova Kruna M Petrovac na Mlavi - specijalistički pregledi, ultrazvuk srca i abdomena, kardiolog, ginekolog, urolog, neurolog, ortoped. Zakažite termin 012 327564.",
@@ -58,17 +60,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "sr_RS",
-    url: "https://novakruna-m.com/",
-    siteName: "Poliklinika Nova Kruna M",
+    url: siteUrl,
+    siteName: clinic.name,
     title: "Poliklinika Nova Kruna M – Petrovac na Mlavi",
     description:
       "Specijalistički pregledi - kardiolog, ginekolog, urolog, neurolog, ortoped. Ultrazvuk srca i abdomena, EMNG, dopler. Zakažite: 012 327564",
     images: [
       {
-        url: "https://novakruna-m.com/images/og-image.jpg",
+        url: "/k1.jpg",
         width: 1200,
         height: 630,
-        alt: "Poliklinika Nova Kruna M",
+        alt: "Poliklinika Nova Kruna M u Petrovcu na Mlavi",
       },
     ],
   },
@@ -77,24 +79,23 @@ export const metadata: Metadata = {
     title: "Poliklinika Nova Kruna M – Petrovac na Mlavi",
     description:
       "Specijalistički pregledi - kardiolog, ginekolog, urolog, neurolog, ortoped. Ultrazvuk srca i abdomena, EMNG, dopler. Zakažite: 012 327564",
-    images: ["https://novakruna-m.com/images/og-image.jpg"],
+    images: ["/k1.jpg"],
   },
   alternates: {
-    canonical: "https://novakruna-m.com/",
+    canonical: siteUrl,
     languages: {
-      "sr": "https://novakruna-m.com/",
-      "sr-RS": "https://novakruna-m.com/",
-      "x-default": "https://novakruna-m.com/",
+      "sr": siteUrl,
+      "sr-RS": siteUrl,
+      "x-default": siteUrl,
     },
   },
   other: {
-    "geo.region": "RS-09",
-    "geo.placename": "Petrovac na Mlavi",
-    "geo.position": "44.290537;21.411442",
-    "ICBM": "44.290537, 21.411442",
+    "geo.region": clinic.address.region,
+    "geo.placename": clinic.address.locality,
+    "geo.position": `${clinic.geo.latitude};${clinic.geo.longitude}`,
+    "ICBM": `${clinic.geo.latitude}, ${clinic.geo.longitude}`,
     "google-site-verification": "DzSv5qkWrBtsdZS__wHBzuWeQeSBFT98RYGkukwP3AY",
   },
-  generator: "v0.dev",
   icons: {
     icon: [
       {

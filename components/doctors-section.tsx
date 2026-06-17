@@ -13,109 +13,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel"
 import { cn } from "@/lib/utils"
-
-interface Doctor {
-  id: string
-  name: string
-  title: string
-  bio: string
-  experience: string
-  focusAreas: string[]
-  imageUrl?: string
-}
-
-const doctors: Doctor[] = [
-  {
-    id: "1",
-    name: "Dr Aleksandar Zarić",
-    title: "Specijalista vaskularne hirurgije (VMA)",
-    bio: "Ultrazvučna dijagnostika krvnih sudova, procena venskog i arterijskog sistema, konsultacije o prevenciji vaskularnih bolesti.",
-    experience: "VMA konsultant",
-    focusAreas: ["Dopler krvnih sudova", "Procena vaskularnog sistema"],
-    imageUrl: "/aleksandar_zaric.jpg",
-  },
-  {
-    id: "2",
-    name: "Dr Luković Milan",
-    title: "Specijalista ortopedije i traumatologije, načelnik kabineta (VMA)",
-    bio: "Dijagnostika, savetovanje, konzervativna terapija i rehabilitacija kod ortopedskih stanja i povreda.",
-    experience: "Ortoped VMA",
-    focusAreas: ["Ortopedija", "Rehabilitacija"],
-    imageUrl: "/milan_lukovic.jpg",
-  },
-  {
-    id: "3",
-    name: "Dr Jasmina Malović",
-    title: "Specijalista neurologije",
-    bio: "Pregled i klinička procena, dijagnostika i interpretacija nalaza, propisivanje i praćenje terapije.",
-    experience: "Neurolog",
-    focusAreas: ["Neurologija", "Dijagnostika"],
-    imageUrl: "/jasmina_malovic.jpg",
-  },
-  {
-    id: "4",
-    name: "Dr Nebojša Jovanović",
-    title: "Specijalista ginekologije (VMA)",
-    bio: "Ginekološki pregledi, ultrazvuk abdomena, lečenje i praćenje bolesti, saveti i testiranja.",
-    experience: "Ginekolog VMA",
-    focusAreas: ["Ginekologija", "Ultrazvuk"],
-    imageUrl: "/nebojsa_jovanovic.jpg",
-  },
-  {
-    id: "5",
-    name: "Dr Vidosav Čolović",
-    title: "Specijalista urologije (KBC)",
-    bio: "Specijalistički urološki pregledi, ultrazvuk urotrakta, dijagnostika i planiranje terapije.",
-    experience: "Urolog KBC",
-    focusAreas: ["Urologija", "Ultrazvuk urotrakta"],
-    imageUrl: "/incognito.jpg",
-  },
-  {
-    id: "6",
-    name: "Dr Marina Đaković",
-    title: "Specijalista interne medicine",
-    bio: "Dijagnostika i lečenje bolesti unutrašnjih organa, preventivni pregledi, praćenje hroničnih stanja i savetovanje o zdravom načinu života.",
-    experience: "Internista",
-    focusAreas: ["Interna medicina", "Preventiva"],
-    imageUrl: "/marina_djakovic.jpg",
-  },
-  {
-    id: "7",
-    name: "Dr Mira Ranković",
-    title: "Specijalista opšte medicine",
-    bio: "Opšti pregledi, propisivanje terapije, preventivna medicina i zdravstvena edukacija.",
-    experience: "Opšta medicina",
-    focusAreas: ["Opšta praksa", "Preventiva"],
-    imageUrl: "/mira_rankovic.jpg",
-  },
-  {
-    id: "8",
-    name: "Dr Vera Petrović",
-    title: "Specijalista pedijatrije",
-    bio: "Dijagnostika i terapija za decu, praćenje razvoja, prevencija i savetovanje roditelja.",
-    experience: "Pedijatar",
-    focusAreas: ["Pedijatrija", "Dečiji razvoj"],
-    imageUrl: "/incognito.jpg",
-  },
-  {
-    id: "9",
-    name: "Dr Dušica Stankić-Urošević",
-    title: "Specijalista kardiologije",
-    bio: "Kardiološki pregledi, terapija, prevencija srčanih bolesti i edukacija pacijenata.",
-    experience: "Kardiolog",
-    focusAreas: ["Ultrazvuk srca", "Prevencija"],
-    imageUrl: "/incognito.jpg",
-  },
-  {
-    id: "10",
-    name: "Dr Željka Iskić",
-    title: "Specijalista otorinolaringologije",
-    bio: "Specijalistički ORL pregledi za decu i odrasle, dijagnostika i lečenje tegoba uha, grla i nosa, ispiranje ušiju, uzimanje briseva i procena promuklosti.",
-    experience: "ORL specijalista",
-    focusAreas: ["ORL pregledi", "Uho, grlo i nos"],
-    imageUrl: "/zeljka.jpg",
-  },
-]
+import { doctors } from "@/lib/clinic-data"
 
 export function DoctorsSection() {
   const [api, setApi] = React.useState<CarouselApi>()
@@ -185,7 +83,7 @@ export function DoctorsSection() {
                           {doctor.imageUrl ? (
                             <Image
                               src={doctor.imageUrl || "/placeholder.svg"}
-                              alt={`Portrait of ${doctor.name}`}
+                              alt={`${doctor.name}, ${doctor.title}`}
                               fill
                               className={cn(
                                 "object-cover transition-transform duration-700 motion-reduce:transition-none",
@@ -262,7 +160,7 @@ export function DoctorsSection() {
 
         <div className="mt-12 text-center md:hidden">
           <Link
-            href="#"
+            href="/#doctors"
             className="inline-flex items-center text-teal-700 font-medium hover:text-teal-800 transition-colors group"
           >
             Pogledajte sve lekare <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />

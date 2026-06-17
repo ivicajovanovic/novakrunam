@@ -1,65 +1,44 @@
 import Link from "next/link"
 import { ArrowRight, Stethoscope, Activity, Microscope, ShieldCheck, Heart } from "lucide-react"
+import { servicePages } from "@/lib/clinic-data"
 
-const services = [
-  {
-    name: "Opšta medicina",
-    description:
-      "Sveobuhvatni pregledi, dijagnostika i lečenje akutnih i hroničnih bolesti za sve uzraste. Pružamo savete o prevenciji i zdravom načinu života.",
-    cta: "Zakažite termin",
-    href: "#contact",
-    icon: Stethoscope,
-  },
-  {
-    name: "Interna medicina",
-    description: "Specijalistički pregledi, ultrazvučna dijagnostika i lečenje bolesti unutrašnjih organa, uključujući srce, pluća i digestivni trakt.",
-    cta: "Zakaži termin",
-    href: "#contact",
-    icon: Activity,
-  },
-  {
-    name: "Ortopedija",
-    description: "Dijagnostika i lečenje povreda, preloma, sportskih povreda, kao i degenerativnih i upalnih bolesti kostiju, zglobova i mišića.",
-    cta: "Zakaži termin",
-    href: "#contact",
-    icon: ShieldCheck,
-  },
-  {
-    name: "Kardiologija",
-    description: "Kompletna briga o zdravlju srca i krvnih sudova. Vršimo EKG, ultrazvuk srca, testove opterećenja i prevenciju srčanih oboljenja.",
-    cta: "Zakaži termin",
-    href: "#contact",
-    icon: Heart,
-  },
-  {
-    name: "Ginekologija",
-    description: "Preventivni pregledi, ultrazvučna dijagnostika, praćenje trudnoće, savetovanje o kontracepciji i lečenje reproduktivnog zdravlja.",
-    cta: "Zakaži termin",
-    href: "#contact",
-    icon: Microscope,
-  },
-  {
-    name: "Urologija",
-    description: "Dijagnostika i lečenje bolesti urinarnog trakta kod muškaraca i žena, kao i muškog reproduktivnog sistema.",
-    cta: "Zakaži termin",
-    href: "#contact",
-    icon: Activity,
-  },
-  {
-    name: "Neurologija",
-    description: "Dijagnostika i lečenje poremećaja nervnog sistema, kao što su glavobolje, migrene, vrtoglavice i neurodegenerativne bolesti.",
-    cta: "Zakaži termin",
-    href: "#contact",
-    icon: Stethoscope,
-  },
-  {
-    name: "Sleep Apnea",
-    description: "Dijagnostika i lečenje apneje u spavanju. Nudimo stručnu analizu spavanja i terapijske opcije za poboljšanje kvaliteta sna.",
-    cta: "Zakaži termin",
-    href: "#contact",
-    icon: ShieldCheck,
-  },
-]
+const featuredServiceSlugs = [
+  "opsta-medicina",
+  "interna-medicina",
+  "ortopedija",
+  "kardiologija",
+  "ginekologija",
+  "urologija",
+  "neurologija",
+  "sleep-apnea",
+] as const
+
+const serviceIcons = {
+  "opsta-medicina": Stethoscope,
+  "interna-medicina": Activity,
+  ortopedija: ShieldCheck,
+  kardiologija: Heart,
+  ginekologija: Microscope,
+  urologija: Activity,
+  neurologija: Stethoscope,
+  "sleep-apnea": ShieldCheck,
+}
+
+const services = featuredServiceSlugs.map((slug) => {
+  const service = servicePages.find((item) => item.slug === slug)
+
+  if (!service) {
+    throw new Error(`Missing service page data for ${slug}`)
+  }
+
+  return {
+    name: service.name,
+    description: service.summary,
+    cta: "Saznajte više",
+    href: `/${service.slug}`,
+    icon: serviceIcons[slug],
+  }
+})
 
 export function ServicesSection() {
   return (

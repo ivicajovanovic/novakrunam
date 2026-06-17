@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock, AlertCircle } from "lucide-react"
+import { clinic } from "@/lib/clinic-data"
 
 export function ContactSection() {
   return (
@@ -21,8 +22,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 text-lg">Lokacija</h4>
-                  <p className="text-slate-600">Petra Dobrnjca 54</p>
-                  <p className="text-slate-600">Petrovac na Mlavi</p>
+                  <p className="text-slate-600">{clinic.address.street}</p>
+                  <p className="text-slate-600">{clinic.address.locality}</p>
                 </div>
               </div>
 
@@ -32,7 +33,9 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 text-lg">Telefon</h4>
-                  <p className="text-slate-600 text-lg font-medium">012 327564 / 066 327564</p>
+                  <p className="text-slate-600 text-lg font-medium">
+                    {clinic.displayPhone} / {clinic.displaySecondaryPhone}
+                  </p>
                   <p className="text-slate-500 text-sm">Pon-Pet: 08:00 - 15:00</p>
                 </div>
               </div>
@@ -43,7 +46,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 text-lg">Email</h4>
-                  <p className="text-slate-600">info@novakrunam.rs</p>
+                  <p className="text-slate-600">{clinic.email}</p>
                   <p className="text-slate-500 text-sm">Za opšta pitanja</p>
                 </div>
               </div>

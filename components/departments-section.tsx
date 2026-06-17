@@ -47,7 +47,7 @@ export function DepartmentsSection() {
             </div>
             <div className="pt-4">
               <a
-                href="#contact"
+                href="/kontakt"
                 className="inline-flex items-center justify-center rounded-md bg-white border border-slate-200 px-6 py-3 text-sm font-medium text-slate-900 shadow-sm hover:bg-slate-50 hover:text-teal-700 transition-colors"
               >
                 Zakažite konsultacije <ArrowRight className="ml-2 h-4 w-4" />

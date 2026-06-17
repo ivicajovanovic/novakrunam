@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="relative h-[50vh] lg:h-auto w-full overflow-hidden order-first bg-slate-200">
         <Image
           src="/friendly-doctor-patient-consultation-bright-clinic.jpg"
-          alt="Doctor having a friendly consultation with a patient in a modern clinic"
+          alt="Lekar razgovara sa pacijentom u svetloj ordinaciji Poliklinike Nova Kruna M"
           fill
           priority
           className="object-cover"
@@ -63,13 +63,13 @@ export function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="#contact"
+              href="/kontakt"
               className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-md bg-teal-700 px-8 text-sm font-medium text-white shadow-lg shadow-teal-700/20 transition-all hover:bg-teal-800 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
             >
               Zakažite pregled
             </Link>
             <Link
-              href="#services"
+              href="/#services"
               className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-md border border-slate-200 bg-white px-8 text-sm font-medium text-slate-900 shadow-sm transition-all hover:bg-slate-50 hover:text-teal-700 hover:border-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2"
             >
               Pogledajte usluge

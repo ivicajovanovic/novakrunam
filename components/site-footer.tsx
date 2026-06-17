@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Activity, Phone, Mail, MapPin } from "lucide-react"
+import { clinic } from "@/lib/clinic-data"
 
 export function SiteFooter() {
   return (
@@ -35,7 +36,7 @@ export function SiteFooter() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="#hero"
+                  href="/#hero"
                   className="hover:text-teal-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   Početna
@@ -43,7 +44,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/#services"
                   className="hover:text-teal-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   Usluge
@@ -51,7 +52,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#doctors"
+                  href="/#doctors"
                   className="hover:text-teal-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   Lekari
@@ -59,7 +60,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#diagnostics"
+                  href="/#diagnostics"
                   className="hover:text-teal-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   Dijagnostika
@@ -67,7 +68,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="/kontakt"
                   className="hover:text-teal-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   Kontakt
@@ -83,7 +84,7 @@ export function SiteFooter() {
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-teal-500" aria-hidden="true" />
                 <a
-                  href="tel:+381110000000"
+                  href={`tel:${clinic.telephone}`}
                   className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   <span className="sr-only">Pozovite nas na</span>
@@ -93,7 +94,7 @@ export function SiteFooter() {
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-teal-500" aria-hidden="true" />
                 <a
-                  href="mailto:info@novakruna-m.rs"
+                  href={`mailto:${clinic.email}`}
                   className="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   <span className="sr-only">Pošaljite nam email na</span>
@@ -138,7 +139,7 @@ export function SiteFooter() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="#"
+                  href="/kontakt"
                   className="hover:text-teal-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   Politika privatnosti
@@ -146,7 +147,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/kontakt"
                   className="hover:text-teal-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   Uslovi korišćenja
@@ -154,7 +155,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/kontakt"
                   className="hover:text-teal-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded-sm"
                 >
                   Politika kolačića

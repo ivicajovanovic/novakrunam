@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Activity, Menu, X, Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useMobileMenu } from "@/contexts/mobile-menu-context"
+import { clinic } from "@/lib/clinic-data"
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = React.useState(false)
@@ -30,12 +31,12 @@ export function SiteHeader() {
   }, [isMobileMenuOpen])
 
   const navItems = [
-    { name: "Početna", href: "#hero" },
-    { name: "Usluge", href: "#services" },
-    { name: "Naš tim", href: "#doctors" },
-    { name: "Dijagnostika", href: "#diagnostics" },
-    { name: "Galerija", href: "#clinic" },
-    { name: "Kontakt", href: "#contact" },
+    { name: "Početna", href: "/#hero" },
+    { name: "Usluge", href: "/#services" },
+    { name: "Naš tim", href: "/#doctors" },
+    { name: "Dijagnostika", href: "/#diagnostics" },
+    { name: "Galerija", href: "/#clinic" },
+    { name: "Kontakt", href: "/kontakt" },
   ]
 
   return (
@@ -52,7 +53,7 @@ export function SiteHeader() {
         <Link href="/" className="flex items-center gap-2.5 group" onClick={() => setIsMobileMenuOpen(false)}>
           <img
             src="/logo.svg"
-            alt="Logo"
+            alt="Poliklinika Nova Kruna M"
             className="h-9 w-9 object-contain"
           />
           <span className="font-bold text-xl tracking-tight text-slate-900">
@@ -76,14 +77,14 @@ export function SiteHeader() {
         {/* Desktop CTA & Phone */}
         <div className="hidden md:flex items-center gap-6">
           <Link
-            href="tel:+38112327564"
+            href={`tel:${clinic.telephone}`}
             className="hidden lg:flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-teal-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 rounded-sm"
           >
             <Phone className="h-4 w-4" />
             <span>012 327564</span>
           </Link>
           <Link
-            href="#contact"
+            href="/kontakt"
             className="inline-flex h-10 items-center justify-center rounded-md bg-teal-700 px-6 text-sm font-semibold text-white shadow-sm transition-all hover:bg-teal-800 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
           >
             Zakažite termin
@@ -123,14 +124,14 @@ export function SiteHeader() {
 
           <div className="pt-6 space-y-4">
             <Link
-              href="#contact"
+              href="/kontakt"
               className="flex w-full h-12 items-center justify-center rounded-lg bg-teal-700 px-6 text-base font-semibold text-white shadow-md transition-colors hover:bg-teal-800"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Zakažite termin
             </Link>
             <Link
-              href="tel:+38112327564"
+              href={`tel:${clinic.telephone}`}
               className="flex w-full h-12 items-center justify-center rounded-lg border-2 border-slate-200 bg-transparent px-6 text-base font-semibold text-slate-700 transition-colors hover:border-teal-700 hover:text-teal-700"
             >
               <Phone className="h-5 w-5 mr-2" />
